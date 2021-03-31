@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="@color/common_google_signin_btn_text_light_default"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_marginVertical="5dp"
+        android:background="@color/colorAccent"
+        android:layout_marginHorizontal="5dp"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/hosp_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HOSPITAL"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_marginTop="7dp"/>
+
+            <TextView
+                android:id="@+id/hosp_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="District, State"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"/>
+
+
+            <TextView
+                android:id="@+id/hosp_numbeds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="122 beds available"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/hosp_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textSize="15sp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"/>
+
+            <Button
+                android:id="@+id/remove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Remove"
+                android:layout_gravity="right"
+                android:background="@color/common_google_signin_btn_text_dark_default"/>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
